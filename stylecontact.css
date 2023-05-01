@@ -1,0 +1,92 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+nav{
+    margin-left:5px ;
+    width:95%;
+    display:flex;
+    padding:1% 2%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+nav img{
+    width:150px;  
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding:6px 12px;
+    position:relative;
+}
+
+.nav-links ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-size:20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    margin:auto;
+    display:block;
+    background-color:#993300;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.donate{
+    background-color:#993300 ;
+    border:2px solid black;
+    padding:10px;    
+}
+.donate:hover{
+    background-color: #7b2901;
+    transition-duration:0.7s ;
+}
+.contact{
+    background-image:linear-gradient(#fff3f3,white,#fff3f3);
+}
+.contact h1{
+    font-size:3em;
+}
+
+.footer{
+    text-align: center;
+    background-color: #000000;
+}
+.footer p{
+    color:white;
+}  
+.footer .social{
+    padding-top:20px ;
+}
+.footer .social a{
+    font-size: 24px;
+    border:2px solid white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display:inline-block;
+    text-align: center;
+    border-radius:10px;
+    margin:0.8px;
+    color: white;
+}
+.footer .social a:hover{
+    opacity:0.8;
+}
+.foot{
+    color:white;
+}
